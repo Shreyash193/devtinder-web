@@ -1,4 +1,4 @@
-#Divtinde Notes
+#Divtinder Notes
 
 -get vite package and run in terminal 
 -run npm install
