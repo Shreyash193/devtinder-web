@@ -4,22 +4,27 @@ import { BrowserRouter, Routes,Route } from 'react-router-dom'
 import Login from './Login';
 import Profile from './Profile';
 import Body from './Body';
+import { Provider } from 'react-redux';
+import appStore from './utils/appStore';
+import Feed from './Feed';
 
 function App() {
   
 
   return (
     <>
-      <BrowserRouter basename='/'>
+    <Provider store={appStore}>
+    <BrowserRouter basename='/'>
       <Routes>
         <Route path='/' element={<Body/>}>
+        <Route path='/' element={<Feed/>}></Route>
         <Route path='/login' element={<Login/>}></Route>
         <Route path='/profile' element={<Profile/>}></Route>
         </Route>
       </Routes>
       </BrowserRouter>
-   
-      <h1 className='text-3xl font-bold text-cyan-700'>Hello World</h1>
+    </Provider>
+      
     </>
   )
 }
