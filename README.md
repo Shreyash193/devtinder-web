@@ -13,7 +13,6 @@
 -install react-router-dom package
 -Create Browserrouter > Routes > Route=/Body > RouteChildren
 -Create an outlet in your Body Component 
-<<<<<<< HEAD
 -Create footer
 -Create Login Page
 -Install axios
@@ -30,5 +29,5 @@
 -if token is not present ,redirect user to login page
 -logout
 -profile page
-=======
->>>>>>> 27eeb2b16c042a5e4140e61fb3ff38361acd2251
+-build the user card on feed
+
