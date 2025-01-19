@@ -10,6 +10,7 @@ const Login = () => {
     const [password, setPassword] = useState("Spatil@123");
     const dispatch =useDispatch();
     const navigate=useNavigate();
+    const [error,setError]=useState("");
 
 
     const handleLogin = async () => {
@@ -19,11 +20,11 @@ const Login = () => {
             },
             {withCredentials:true},
         );
-        //console.log(res.data);
         dispatch(addUser(res.data));
         return navigate("/");
         }
         catch (err) {
+            setError(err?.response?.data || "something went wrong");
             console.error(err);
         }
     };
@@ -55,6 +56,7 @@ const Login = () => {
                                 onChange={(e) => setPassword(e.target.value)} />
                         </label>
                     </div>
+                    <p className="text-red-500 text-center">{error}</p>
                     <div className="card-actions justify-center">
                         <button className="btn btn-primary"onClick={handleLogin}>Login</button>
                     </div>
