@@ -40,10 +40,10 @@ const Connections =()=>{
         <div className="flex justify-center font-bold mt-10 ">Connections</div>
 
         {connections.map((connection)=>{
-            const {firstName,lastName,photo,age,gender,about}=connection;
+            const {_id,firstName,lastName,photo,age,gender,about}=connection;
 
             return (
-                <div className="flex justify-center m-5">
+                <div key={_id} className="flex justify-center m-5">
                     <div className="card card-side bg-base-300 shadow-xl w-1/2 ">
                 <figure>
                   <img
@@ -52,11 +52,8 @@ const Connections =()=>{
                 </figure>
                 <div className="card-body">
                   <h2 className="card-title">{firstName + " " + lastName}</h2>
-                  <p>{age + "," + gender}</p>
+                  {age && gender && <p>{age + "," + gender}</p>}
                   <p>{about}</p>
-                  {/* <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Watch</button>
-                  </div> */}
                 </div>
                       
               </div>

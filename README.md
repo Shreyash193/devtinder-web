@@ -32,5 +32,7 @@
 -build the user card on feed
 -Edit profile Feature(Api problem)
 -Show Toast Message on save of profile
--see all my connections
+-New Page- see all my connections 
+-New Page- see all my connection Requests
+-Feature -Accept/Reject Connection Requests
 
