@@ -30,4 +30,7 @@
 -logout
 -profile page
 -build the user card on feed
+-Edit profile Feature(Api problem)
+-Show Toast Message on save of profile
+-see all my connections
 
