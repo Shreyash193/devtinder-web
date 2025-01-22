@@ -11,8 +11,8 @@ const feedSlice=createSlice({
             return action.payload;
         },
         removeUserFeed:(state,action)=>{
-            const newArray=state.filter((r)=>r._id !=action.payload);
-            return newArray ;
+            const newFeed=state.filter((user)=>user._id !=action.payload);
+            return newFeed ;
         }
     }
 });
