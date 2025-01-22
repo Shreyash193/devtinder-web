@@ -9,10 +9,10 @@ import { addUser } from "./utils/userSlice";
 const EditProfile=({user})=>{
      const [firstName, setfirstName] = useState(user.firstName);
      const [lastName, setlastName] = useState(user.lastName);
-     const [photo,setPhoto]=useState(user.photo);
-     const [about,setAbout]=useState(user.about);
-     const [age,setAge]=useState(user.age);
-     const [gender,setGender]=useState(user.gender);
+     const [photo,setPhoto]=useState(user.photo || "");
+     const [about,setAbout]=useState(user.about || "");
+     const [age,setAge]=useState(user.age || "");
+     const [gender,setGender]=useState(user.gender || "");
      const [error,setError]=useState();
      const dispatch=useDispatch();
 
@@ -21,7 +21,7 @@ const EditProfile=({user})=>{
         try {
             const res = await axios.patch(
                 BASE_URL + "/profile/edit",
-                { firstName, lastName, photo, about, age, gender },
+                { firstName, lastName, photo, about, age, gender },{},
                 { withCredentials: true }
             );
     

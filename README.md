@@ -35,4 +35,6 @@
 -New Page- see all my connections 
 -New Page- see all my connection Requests
 -Feature -Accept/Reject Connection Requests
+-send request and ignore func
+-Build Login and Sign up
 
