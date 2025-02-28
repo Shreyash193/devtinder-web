@@ -1,40 +1,9 @@
-#Divtinder Notes
-
--get vite package and run in terminal 
--run npm install
--npm run dev
--Created a vite + React application
--Remove Unecesssary code
--initializa a git
--install tailwind package
--install daisyui
--add navbar in app.jsx
--create a seprate Navbar.jsx file and move navbar code there from app.jsx
--install react-router-dom package
--Create Browserrouter > Routes > Route=/Body > RouteChildren
--Create an outlet in your Body Component 
--Create footer
--Create Login Page
--Install axios
--CORS - install cors in backend => add middleware to with configuration : origin,crediantial:true
--Whenever you're making API call so pass axios => {withCredentials:true}
--install redux toolkit and redux store
--configureStore => add provider in app.js 
--createSlice =>add reducer to store
--add redux devtools in chrome
--login and see if your data is coming properly in the store
--NavBar should update as soon as user login 
--refactor our code to add constraints file + create a components folder
--you should not be access other routes without login
--if token is not present ,redirect user to login page
--logout
--profile page
--build the user card on feed
--Edit profile Feature(Api problem)
--Show Toast Message on save of profile
--New Page- see all my connections 
--New Page- see all my connection Requests
--Feature -Accept/Reject Connection Requests
--send request and ignore func
--Build Login and Sign up
-
+• Built a MERN-based social networking platform for developers to manage connections, update profiles, and authenticate
+securely.
+• Implemented a responsive and user-friendly interface to enhance accessibility across devices, ensuring seamless user
+interactions and a modern design, with a focus on Responsive Design.
+• Deployed on Amazon EC2, leveraging RESTful APIs for efficient data handling and ensuring scalability and reliability
+![Screenshot 2025-02-28 200922](https://github.com/user-attachments/assets/ee83171c-fd56-4716-ab46-6f8c978a1343)
+![Screenshot 2025-02-28 201214](https://github.com/user-attachments/assets/2b696054-faa6-4342-a278-f7f09dbbe47c)
+![Screenshot 2025-02-28 201258](https://github.com/user-attachments/assets/e3f2952c-de2b-4bd7-934a-1768243dd1b1)
+![Screenshot 2025-02-28 201333](https://github.com/user-attachments/assets/b96c0c97-3093-40cb-bcf8-76517bb8cad7)
